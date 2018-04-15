@@ -55,7 +55,6 @@ AUDIO_FEATURE_ENABLED_HWDEP_CAL := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Binder
@@ -69,13 +68,11 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
-# CMHW
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/lineagehw/
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap_to_wake"
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-TARGET_LEGACY_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
 # Display
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
@@ -133,9 +130,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USE_SDCLANG := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/sepolicy/legacy-sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
+#include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/legacy-sepolicy.mk
+#BOARD_SEPOLICY_DIRS += device/lge/g3-common/sepolicy
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
