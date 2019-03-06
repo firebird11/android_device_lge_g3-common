@@ -216,3 +216,40 @@ vendor/firmware/wcnss.mdt
 
 # Widevine - from angler - OPR6.170623.017 factory image
 vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
+
+# WiFi Display
+bin/wfdservice:vendor/bin/wfdservice
+etc/init/wfdservice.rc:vendor/etc/init/wfdservice.rc
+etc/wfdconfig.xml:vendor/etc/wfdconfig.xml
+etc/wfdconfigsink.xml:vendor/etc/wfdconfigsink.xml
+-framework/WfdCommon.jar
+vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+vendor/lib/libFileMux.so
+vendor/lib/libdisplayconfig.so
+vendor/lib/libmmparser.so
+vendor/lib/libmmparser_lite.so
+vendor/lib/libmmosal.so
+vendor/lib/libmmrtpdecoder.so
+vendor/lib/libmmrtpencoder.so
+vendor/lib/libOmxMux.so
+vendor/lib/libqdMetaData.system.so
+vendor/lib/libwfdaac.so
+vendor/lib/libwfdavenhancements.so
+vendor/lib/libwfdcodecv4l2.so
+vendor/lib/libwfdcommonutils.so
+vendor/lib/libwfdconfigutils.so
+vendor/lib/libwfdclient.so
+vendor/lib/libwfdmminterface.so
+vendor/lib/libwfdmmservice.so
+vendor/lib/libwfdmmsink.so
+vendor/lib/libwfdmmsrc.so
+vendor/lib/libwfdnative.so
+vendor/lib/libwfdrtsp.so
+vendor/lib/libwfdservice.so
+vendor/lib/libwfdsm.so
+vendor/lib/libwfduibcinterface.so
+vendor/lib/libwfduibcsink.so
+vendor/lib/libwfduibcsinkinterface.so
+vendor/lib/libwfduibcsrc.so
+vendor/lib/libwfduibcsrcinterface.so
+-app/WfdService/WfdService.apk

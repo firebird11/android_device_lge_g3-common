@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     memtrack.msm8974 \
-    liboverlay
+    liboverlay \
+    vendor.display.config@1.0
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -267,3 +268,10 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
